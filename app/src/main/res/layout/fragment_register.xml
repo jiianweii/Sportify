@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:id="@+id/regiPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/regiName"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_border"
+        android:paddingLeft="10dp"
+        android:padding="15dp"
+        android:layout_below="@id/regiPage"
+        />
+
+    <EditText
+        android:id="@+id/regiEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email"
+        android:background="@drawable/input_border"
+        android:paddingLeft="10dp"
+        android:padding="15dp"
+        android:layout_below="@+id/regiName"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/regiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/password"
+        android:background="@drawable/input_border"
+        android:paddingLeft="10dp"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/regiEmail"/>
+
+    <EditText
+        android:id="@+id/regiRePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/rePassword"
+        android:background="@drawable/input_border"
+        android:paddingLeft="10dp"
+        android:padding="15dp"
+        android:layout_below="@+id/regiPassword"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/regiAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/age"
+        android:background="@drawable/input_border"
+        android:paddingLeft="10dp"
+        android:padding="15dp"
+        android:layout_below="@+id/regiRePassword"
+        android:inputType="number"/>
+
+    <Spinner
+        android:id="@+id/regiGenderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_below="@+id/regiAge"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/regiGenderText"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Back To Login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/btnRegister"/>
+
+</RelativeLayout>
