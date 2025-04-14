@@ -8,3 +8,7 @@ jobs:
         run: echo "Hello World"
       - name: Print Goodbye
         run: echo "Done Bye"
+      - name: Run Double
+        run: |
+          echo "Run Once"
+          echo "Run Twice"
